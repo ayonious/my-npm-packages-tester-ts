@@ -1,4 +1,4 @@
-# 🔬👷Testing all my npm packages (in Typescript)
+# 🔬👷🇹Testing all my npm packages (in Typescript)
 
 [![Build Status](https://travis-ci.org/ayonious/my-npm-packages-tester-ts.svg?branch=master)](https://travis-ci.org/ayonious/my-npm-packages-tester-ts)
 
