@@ -2,7 +2,7 @@ import { Table } from 'console-table-printer';
 
 const p = new Table({
   columns: [
-    { name: 'index', alignment: 'left', color: 'blue' }, //with alignment and color
+    { name: 'index', alignment: 'left', color: 'green' }, //with alignment and color
     { name: 'text', alignment: 'right' },
   ],
 });
