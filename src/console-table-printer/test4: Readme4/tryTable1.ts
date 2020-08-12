@@ -1,7 +1,6 @@
 import { Table } from 'console-table-printer';
 
 const p = new Table({
-  style: 'fatBorder', //style of border of the table
   columns: [
     { name: 'index', alignment: 'left', color: 'white_bold' }, //with alignment and color
     { name: 'text', alignment: 'right' },
