@@ -1,6 +1,6 @@
 # 🔬👷🇹Testing all my npm packages (in Typescript)
 
-[![Build Status](https://travis-ci.com/ayonious/my-npm-packages-tester-ts.svg?branch=master)](https://travis-ci.com/ayonious/my-npm-packages-tester-ts)
+[![CircleCI](https://circleci.com/gh/ayonious/my-npm-packages-tester-ts.svg?style=svg)](https://circleci.com/gh/ayonious/my-npm-packages-tester-ts)
 
 
 Just testing all my npm packages directly downloading them from npmjs.
