@@ -1,6 +1,6 @@
 {
   "name": "console-table-printer-test",
-  "version": "0.0.276",
+  "version": "0.0.277",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "simple-wcswidth": "^1.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.22",
+    "@types/jest": "^26.0.23",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
