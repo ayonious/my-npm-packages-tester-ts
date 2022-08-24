@@ -11,8 +11,9 @@
 - If the pr succeeds ✅ , it will be merged and means all was good. No action needed from me anymore :)
 - If the pr fails ❌ , I will see the email and know something went wrong. Gotta fix it manually then
 
+Step1: Run the following commands:
+
 ```
-Commands to test some cases
 ts-node src/console-table-printer/test1/tryTable.ts
 ts-node src/console-table-printer/test2:\ Readme1/tryTable1.ts
 ts-node src/console-table-printer/test3:\ Readme2/tryTable1.ts
@@ -21,4 +22,7 @@ ts-node src/console-table-printer/test4:\ Readme4/tryTable1.ts
 ts-node src/console-table-printer/test5:\ Readme5/tryTable1.ts
 ts-node src/console-table-printer/test6:\ Readme6/tryTable1.ts
 ts-node src/console-table-printer/test7/tryTable1.ts
+ts-node src/console-table-printer/test8/tryTable1.ts
 ```
+
+Match with this Image:
