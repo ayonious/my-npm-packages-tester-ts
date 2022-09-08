@@ -1,6 +1,6 @@
 {
   "name": "console-table-printer-test",
-  "version": "0.0.377",
+  "version": "0.0.378",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
     "ts-jest": "^28.0.8",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   }
 }
