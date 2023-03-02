@@ -1,7 +1,7 @@
 import { printTable } from 'console-table-printer';
 
 describe('Example: Print a simple Table without table instance creation', () => {
-  it(`simple print`, function() {
+  it(`simple print`, () => {
     printTable([
       {
         _count: 3,
