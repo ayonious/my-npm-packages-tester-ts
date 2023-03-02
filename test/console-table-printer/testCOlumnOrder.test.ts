@@ -1,6 +1,5 @@
-import { Table } from 'console-table-printer';
-
 import { expect } from '@jest/globals';
+import { Table } from 'console-table-printer';
 
 describe('Example: Print a simple Table without table instance creation', () => {
   it(`simple print`, () => {
