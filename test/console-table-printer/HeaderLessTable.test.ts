@@ -57,5 +57,6 @@ describe('Example: Print a simple Table without table instance creation', () => 
     ]);
 
     expect(table.printTable()).toMatchSnapshot();
+    expect(table.render()).toMatchSnapshot();
   });
 });

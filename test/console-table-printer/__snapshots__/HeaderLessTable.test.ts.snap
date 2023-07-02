@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Example: Print a simple Table without table instance creation simple print 1`] = `undefined`;
+
+exports[`Example: Print a simple Table without table instance creation simple print 2`] = `
+"[01m            Bundle (BUNDLENAME)            [0m
+
+[37m [0m[01m  WEWWWW[0m [37m [0m[01m WEWWWW[0m [37m [0m[01m      [0m [37m [0m[01m    Price[0m 
+
+[37m [0m[37m      👍[0m [37m [0m[37m     ✅[0m [37m [0m[37mDeluxe[0m [37m [0m[37m  1 11 VP[0m 
+[37m [0m[37m   thing[0m [37m [0m[37m   some[0m [37m [0m[37mDeluxe[0m [37m [0m[37m 1 123 VP[0m 
+[37m [0m[37masdfasdf[0m [37m [0m[37masfasdf[0m [37m [0m[37mDeluxe[0m [37m [0m[37m1 1000 PP[0m 
+"
+`;
