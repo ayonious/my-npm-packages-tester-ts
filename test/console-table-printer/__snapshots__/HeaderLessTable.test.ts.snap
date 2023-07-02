@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example: Print a simple Table without table instance creation simple print 1`] = `undefined`;
