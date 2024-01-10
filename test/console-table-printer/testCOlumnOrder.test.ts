@@ -51,6 +51,8 @@ describe('Example: Print a simple Table without table instance creation', () => 
       },
       { color: 'green' }
     );
+
+    p.printTable();
     expect(p.render()).toMatchSnapshot();
   });
 });
