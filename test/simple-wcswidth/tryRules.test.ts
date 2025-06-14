@@ -1,4 +1,4 @@
-import { wcswidth } from 'simple-wcswidth';
+import { wcswidth, wcwidth } from 'simple-wcswidth';
 
 describe('Example: Simple', () => {
   it(`Simple`, function () {
@@ -35,5 +35,46 @@ describe('Example: Simple', () => {
     // Long string tests
     expect(wcswidth('Hello World 你好世界')).toBe(20);
     expect(wcswidth('1234567890 一二三四五')).toBe(21);
+  });
+});
+
+describe('wcwidth', () => {
+  it('should return correct width for ASCII characters', () => {
+    expect(wcwidth('a'.codePointAt(0)!)).toBe(1);
+    expect(wcwidth('Z'.codePointAt(0)!)).toBe(1);
+    expect(wcwidth('0'.codePointAt(0)!)).toBe(1);
+    expect(wcwidth(' '.codePointAt(0)!)).toBe(1);
+    expect(wcwidth('!'.codePointAt(0)!)).toBe(1);
+  });
+
+  it('should return correct width for CJK characters', () => {
+    expect(wcwidth('你'.codePointAt(0)!)).toBe(2);
+    expect(wcwidth('界'.codePointAt(0)!)).toBe(2);
+    expect(wcwidth('漢'.codePointAt(0)!)).toBe(2);
+    expect(wcwidth('日'.codePointAt(0)!)).toBe(2);
+  });
+
+  it('should return correct width for emoji', () => {
+    expect(wcwidth('😊'.codePointAt(0)!)).toBe(1);
+    expect(wcwidth('👋'.codePointAt(0)!)).toBe(1);
+    expect(wcwidth('🌟'.codePointAt(0)!)).toBe(1);
+    expect(wcwidth('👍'.codePointAt(0)!)).toBe(1);
+  });
+
+  it('should return 0 for combining marks', () => {
+    // U+0301: COMBINING ACUTE ACCENT
+    expect(wcwidth(0x0301)).toBe(0);
+    // U+20DD: COMBINING ENCLOSING CIRCLE
+    expect(wcwidth(0x20DD)).toBe(0);
+  });
+
+  it('should return correct value for control characters', () => {
+    expect(wcwidth(0x00)).toBe(0);
+    expect(wcwidth(0x07)).toBe(-1);
+    expect(wcwidth(0x1B)).toBe(-1);
+  });
+
+  it('should return 0 for empty string', () => {
+    expect(wcwidth(undefined as any)).toBe(0);
   });
 });
