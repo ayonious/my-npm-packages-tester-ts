@@ -1,4 +1,4 @@
-import { Table } from "console-table-printer";
+import { Table } from 'console-table-printer';
 
 const p5 = new Table({
   title: 'Title of the Table', // A text showsup on top of table (optoinal)

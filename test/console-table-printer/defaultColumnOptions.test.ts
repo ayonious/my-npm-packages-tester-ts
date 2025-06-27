@@ -6,13 +6,9 @@ describe('Table with defaultColumnOptions', () => {
     const table = new Table({
       defaultColumnOptions: {
         alignment: 'right',
-        color: 'green'
+        color: 'green',
       },
-      columns: [
-        { name: 'id' },
-        { name: 'name' },
-        { name: 'value' }
-      ]
+      columns: [{ name: 'id' }, { name: 'name' }, { name: 'value' }],
     });
 
     table.addRow({ id: 1, name: 'Item 1', value: 100 });
@@ -25,13 +21,13 @@ describe('Table with defaultColumnOptions', () => {
     const table = new Table({
       defaultColumnOptions: {
         alignment: 'right',
-        color: 'green'
+        color: 'green',
       },
       columns: [
         { name: 'id', alignment: 'left' },
         { name: 'name', color: 'blue' },
-        { name: 'value' }
-      ]
+        { name: 'value' },
+      ],
     });
 
     table.addRow({ id: 1, name: 'Item 1', value: 100 });
@@ -44,8 +40,8 @@ describe('Table with defaultColumnOptions', () => {
     const table = new Table({
       defaultColumnOptions: {
         alignment: 'right',
-        color: 'yellow'
-      }
+        color: 'yellow',
+      },
     });
 
     table.addRow({ id: 1, name: 'Item 1', value: 100 });

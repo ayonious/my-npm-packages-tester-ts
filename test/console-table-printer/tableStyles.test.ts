@@ -8,14 +8,14 @@ describe('Table with different styles', () => {
       columns: [
         { name: 'id', alignment: 'left' },
         { name: 'name', alignment: 'center' },
-        { name: 'score', alignment: 'right' }
-      ]
+        { name: 'score', alignment: 'right' },
+      ],
     });
 
     table.addRows([
       { id: 1, name: 'Alice', score: 95 },
       { id: 2, name: 'Bob', score: 88 },
-      { id: 3, name: 'Charlie', score: 92 }
+      { id: 3, name: 'Charlie', score: 92 },
     ]);
 
     expect(table.render()).toMatchSnapshot();
@@ -27,14 +27,14 @@ describe('Table with different styles', () => {
       columns: [
         { name: 'id', alignment: 'left', color: 'blue' },
         { name: 'name', alignment: 'center', color: 'green' },
-        { name: 'score', alignment: 'right', color: 'yellow' }
-      ]
+        { name: 'score', alignment: 'right', color: 'yellow' },
+      ],
     });
 
     table.addRows([
       { id: 1, name: 'Alice', score: 95 },
       { id: 2, name: 'Bob', score: 88 },
-      { id: 3, name: 'Charlie', score: 92 }
+      { id: 3, name: 'Charlie', score: 92 },
     ]);
 
     expect(table.render()).toMatchSnapshot();
@@ -46,14 +46,14 @@ describe('Table with different styles', () => {
       columns: [
         { name: 'id', title: 'ID', alignment: 'left' },
         { name: 'name', title: 'Full Name', alignment: 'center' },
-        { name: 'score', title: 'Test Score', alignment: 'right' }
-      ]
+        { name: 'score', title: 'Test Score', alignment: 'right' },
+      ],
     });
 
     table.addRows([
       { id: 1, name: 'Alice', score: 95 },
       { id: 2, name: 'Bob', score: 88 },
-      { id: 3, name: 'Charlie', score: 92 }
+      { id: 3, name: 'Charlie', score: 92 },
     ]);
 
     expect(table.render()).toMatchSnapshot();
@@ -65,22 +65,25 @@ describe('Table with different styles', () => {
       columns: [
         { name: 'id', alignment: 'left' },
         { name: 'name', alignment: 'center' },
-        { name: 'score', alignment: 'right' }
+        { name: 'score', alignment: 'right' },
       ],
       colorMap: {
-        custom_green_bold: '\x1b[1m\x1b[32m'
-      }
+        custom_green_bold: '\x1b[1m\x1b[32m',
+      },
     });
 
-    table.addRows([
-      { id: 1, name: 'Alice', score: 95 }
-    ], { color: 'custom_green_bold' });
+    table.addRows([{ id: 1, name: 'Alice', score: 95 }], {
+      color: 'custom_green_bold',
+    });
 
-    table.addRows([
-      { id: 2, name: 'Bob', score: 88 },
-      { id: 3, name: 'Charlie', score: 92 }
-    ], { color: 'yellow' });
+    table.addRows(
+      [
+        { id: 2, name: 'Bob', score: 88 },
+        { id: 3, name: 'Charlie', score: 92 },
+      ],
+      { color: 'yellow' }
+    );
 
     expect(table.render()).toMatchSnapshot();
   });
-}); 
+});

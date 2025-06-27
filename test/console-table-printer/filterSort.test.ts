@@ -9,7 +9,7 @@ describe('Table with data manipulation', () => {
     { id: 3, name: 'Charlie', department: 'Engineering', salary: 92000 },
     { id: 4, name: 'Diana', department: 'HR', salary: 67000 },
     { id: 5, name: 'Edward', department: 'Marketing', salary: 82000 },
-    { id: 6, name: 'Fiona', department: 'Engineering', salary: 99000 }
+    { id: 6, name: 'Fiona', department: 'Engineering', salary: 99000 },
   ];
 
   it('should display filtered data (Engineering department only)', () => {
@@ -19,12 +19,14 @@ describe('Table with data manipulation', () => {
         { name: 'id', alignment: 'left' },
         { name: 'name', alignment: 'left' },
         { name: 'department', alignment: 'left' },
-        { name: 'salary', alignment: 'right' }
-      ]
+        { name: 'salary', alignment: 'right' },
+      ],
     });
 
     // Filter data before adding to table
-    const engineeringOnly = sampleData.filter(row => row.department === 'Engineering');
+    const engineeringOnly = sampleData.filter(
+      (row) => row.department === 'Engineering'
+    );
     table.addRows(engineeringOnly);
 
     expect(table.render()).toMatchSnapshot();
@@ -37,8 +39,8 @@ describe('Table with data manipulation', () => {
         { name: 'id', alignment: 'left' },
         { name: 'name', alignment: 'left' },
         { name: 'department', alignment: 'left' },
-        { name: 'salary', alignment: 'right' }
-      ]
+        { name: 'salary', alignment: 'right' },
+      ],
     });
 
     // Sort data before adding to table
@@ -55,12 +57,14 @@ describe('Table with data manipulation', () => {
         { name: 'id', alignment: 'left' },
         { name: 'name', alignment: 'left' },
         { name: 'department', alignment: 'left' },
-        { name: 'salary', alignment: 'right' }
-      ]
+        { name: 'salary', alignment: 'right' },
+      ],
     });
 
     // Sort data before adding to table
-    const sortedBySalaryDesc = [...sampleData].sort((a, b) => b.salary - a.salary);
+    const sortedBySalaryDesc = [...sampleData].sort(
+      (a, b) => b.salary - a.salary
+    );
     table.addRows(sortedBySalaryDesc);
 
     expect(table.render()).toMatchSnapshot();
@@ -73,17 +77,17 @@ describe('Table with data manipulation', () => {
         { name: 'id', alignment: 'left' },
         { name: 'name', alignment: 'left' },
         { name: 'department', alignment: 'left' },
-        { name: 'salary', alignment: 'right' }
-      ]
+        { name: 'salary', alignment: 'right' },
+      ],
     });
 
     // Filter and sort data before adding to table
     const marketingOnly = sampleData
-      .filter(row => row.department === 'Marketing')
+      .filter((row) => row.department === 'Marketing')
       .sort((a, b) => b.salary - a.salary);
-    
+
     table.addRows(marketingOnly);
 
     expect(table.render()).toMatchSnapshot();
   });
-}); 
+});

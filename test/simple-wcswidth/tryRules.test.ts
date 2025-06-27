@@ -65,13 +65,13 @@ describe('wcwidth', () => {
     // U+0301: COMBINING ACUTE ACCENT
     expect(wcwidth(0x0301)).toBe(0);
     // U+20DD: COMBINING ENCLOSING CIRCLE
-    expect(wcwidth(0x20DD)).toBe(0);
+    expect(wcwidth(0x20dd)).toBe(0);
   });
 
   it('should return correct value for control characters', () => {
     expect(wcwidth(0x00)).toBe(0);
     expect(wcwidth(0x07)).toBe(-1);
-    expect(wcwidth(0x1B)).toBe(-1);
+    expect(wcwidth(0x1b)).toBe(-1);
   });
 
   it('should return 0 for empty string', () => {

@@ -1,7 +1,7 @@
 import { executeEngine } from 'nested-rules-engine';
 
 describe('Example: Print a simple Table without table instance creation', () => {
-  it(`simple print`, function() {
+  it(`simple print`, function () {
     // Step1: Define your conditional rules
     const rules = {
       you_are_a_human: {

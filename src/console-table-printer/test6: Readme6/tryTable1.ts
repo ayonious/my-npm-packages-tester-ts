@@ -12,15 +12,9 @@ const p = new Table({
 
 p.addRow({ index: 1, text: 'red wine' }, { color: 'green' });
 p.addRow(
-  { index: 2, text: 'green gemuse'},
+  { index: 2, text: 'green gemuse' },
   { color: 'custom_green' } // your green
 );
-p.addRow(
-  { index: 3, text: 'gelb bananen'},
-  { color: 'yellow' }
-);
-p.addRow(
-  { index: 3, text: 'rosa hemd wie immer'},
-  { color: 'cyan' }
-);
+p.addRow({ index: 3, text: 'gelb bananen' }, { color: 'yellow' });
+p.addRow({ index: 3, text: 'rosa hemd wie immer' }, { color: 'cyan' });
 p.printTable();
