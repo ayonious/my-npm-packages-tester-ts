@@ -1,6 +1,6 @@
 # 🔬👷🇹Testing all my npm packages (in Typescript)
 
-[![CircleCI](https://circleci.com/gh/ayonious/my-npm-packages-tester-ts.svg?style=svg)](https://circleci.com/gh/ayonious/my-npm-packages-tester-ts)
+[![CI](https://github.com/ayonious/my-npm-packages-tester-ts/workflows/CI/badge.svg)](https://github.com/ayonious/my-npm-packages-tester-ts/actions)
 
 > Testing all my npm packages directly downloading them from npmjs. Nothing better than a real end to end testing.
 
