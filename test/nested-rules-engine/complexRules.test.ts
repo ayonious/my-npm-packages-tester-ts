@@ -1,4 +1,4 @@
-const { executeEngine } = require('nested-rules-engine');
+import { executeEngine } from 'nested-rules-engine';
 import { expect } from '@jest/globals';
 
 // Define a type for the result object
