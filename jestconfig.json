@@ -1,4 +1,10 @@
 {
   "collectCoverage": true,
-  "preset": "ts-jest"
+  "preset": "ts-jest",
+  "transform": {
+    "^.+\\.m?js$": "babel-jest"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/(?!nested-rules-engine)"
+  ]
 }
