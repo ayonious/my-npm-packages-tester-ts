@@ -2950,10 +2950,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-nested-rules-engine@1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/nested-rules-engine/-/nested-rules-engine-1.2.7.tgz#9aabac727b971e255c4ddfd8e374b28ef6c0169e"
-  integrity sha512-9+/n3eRTuDFli07dcaT/3kzphkSISi3exI7yWnFY1A6qV/J3mhkEqQZIqb7Hr/Ym5nsNcCzD0Pzv89KQCk0KkQ==
+nested-rules-engine@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/nested-rules-engine/-/nested-rules-engine-3.0.0.tgz#42f1c7005fceeead447819bde1b517d0b12107bd"
+  integrity sha512-iQa5rOWp5M/uRsz9HveGF68aRE2jpbGAQZKWVExvnyMk/Z619aKNn5S5wzKoos/qCBHPmw+SxOJY/hIBlWghSw==
 
 node-int64@^0.4.0:
   version "0.4.0"
